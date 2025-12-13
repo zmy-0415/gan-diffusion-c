@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/e/visualStudio/workspace/gan-diffusion-c/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

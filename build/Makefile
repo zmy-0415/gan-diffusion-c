@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /e/visualStudio/workspace/gan-diffusion-c
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /e/visualStudio/workspace/gan-diffusion-c
+CMAKE_BINARY_DIR = /e/visualStudio/workspace/gan-diffusion-c/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /e/visualStudio/workspace/gan-diffusion-c/CMakeFiles /e/visualStudio/workspace/gan-diffusion-c//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /e/visualStudio/workspace/gan-diffusion-c/build/CMakeFiles /e/visualStudio/workspace/gan-diffusion-c/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /e/visualStudio/workspace/gan-diffusion-c/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /e/visualStudio/workspace/gan-diffusion-c/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,72 +117,48 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named gan_train
+# Target rules for targets named main
 
 # Build rule for target.
-gan_train: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gan_train
-.PHONY : gan_train
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-gan_train/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gan_train.dir/build.make CMakeFiles/gan_train.dir/build
-.PHONY : gan_train/fast
+main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
 
-src/gan.o: src/gan.c.o
-.PHONY : src/gan.o
-
-# target to build an object file
-src/gan.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gan_train.dir/build.make CMakeFiles/gan_train.dir/src/gan.c.o
-.PHONY : src/gan.c.o
-
-src/gan.i: src/gan.c.i
-.PHONY : src/gan.i
-
-# target to preprocess a source file
-src/gan.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gan_train.dir/build.make CMakeFiles/gan_train.dir/src/gan.c.i
-.PHONY : src/gan.c.i
-
-src/gan.s: src/gan.c.s
-.PHONY : src/gan.s
-
-# target to generate assembly for a file
-src/gan.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gan_train.dir/build.make CMakeFiles/gan_train.dir/src/gan.c.s
-.PHONY : src/gan.c.s
-
-src/linalg.o: src/linalg.c.o
-.PHONY : src/linalg.o
+src/a.o: src/a.c.o
+.PHONY : src/a.o
 
 # target to build an object file
-src/linalg.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gan_train.dir/build.make CMakeFiles/gan_train.dir/src/linalg.c.o
-.PHONY : src/linalg.c.o
+src/a.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/a.c.o
+.PHONY : src/a.c.o
 
-src/linalg.i: src/linalg.c.i
-.PHONY : src/linalg.i
+src/a.i: src/a.c.i
+.PHONY : src/a.i
 
 # target to preprocess a source file
-src/linalg.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gan_train.dir/build.make CMakeFiles/gan_train.dir/src/linalg.c.i
-.PHONY : src/linalg.c.i
+src/a.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/a.c.i
+.PHONY : src/a.c.i
 
-src/linalg.s: src/linalg.c.s
-.PHONY : src/linalg.s
+src/a.s: src/a.c.s
+.PHONY : src/a.s
 
 # target to generate assembly for a file
-src/linalg.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gan_train.dir/build.make CMakeFiles/gan_train.dir/src/linalg.c.s
-.PHONY : src/linalg.c.s
+src/a.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/a.c.s
+.PHONY : src/a.c.s
 
 src/main.o: src/main.c.o
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gan_train.dir/build.make CMakeFiles/gan_train.dir/src/main.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.c.o
 .PHONY : src/main.c.o
 
 src/main.i: src/main.c.i
@@ -190,7 +166,7 @@ src/main.i: src/main.c.i
 
 # target to preprocess a source file
 src/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gan_train.dir/build.make CMakeFiles/gan_train.dir/src/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.c.i
 .PHONY : src/main.c.i
 
 src/main.s: src/main.c.s
@@ -198,32 +174,8 @@ src/main.s: src/main.c.s
 
 # target to generate assembly for a file
 src/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gan_train.dir/build.make CMakeFiles/gan_train.dir/src/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.c.s
 .PHONY : src/main.c.s
-
-src/nn.o: src/nn.c.o
-.PHONY : src/nn.o
-
-# target to build an object file
-src/nn.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gan_train.dir/build.make CMakeFiles/gan_train.dir/src/nn.c.o
-.PHONY : src/nn.c.o
-
-src/nn.i: src/nn.c.i
-.PHONY : src/nn.i
-
-# target to preprocess a source file
-src/nn.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gan_train.dir/build.make CMakeFiles/gan_train.dir/src/nn.c.i
-.PHONY : src/nn.c.i
-
-src/nn.s: src/nn.c.s
-.PHONY : src/nn.s
-
-# target to generate assembly for a file
-src/nn.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gan_train.dir/build.make CMakeFiles/gan_train.dir/src/nn.c.s
-.PHONY : src/nn.c.s
 
 # Help Target
 help:
@@ -233,19 +185,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... gan_train"
-	@echo "... src/gan.o"
-	@echo "... src/gan.i"
-	@echo "... src/gan.s"
-	@echo "... src/linalg.o"
-	@echo "... src/linalg.i"
-	@echo "... src/linalg.s"
+	@echo "... main"
+	@echo "... src/a.o"
+	@echo "... src/a.i"
+	@echo "... src/a.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/nn.o"
-	@echo "... src/nn.i"
-	@echo "... src/nn.s"
 .PHONY : help
 
 
