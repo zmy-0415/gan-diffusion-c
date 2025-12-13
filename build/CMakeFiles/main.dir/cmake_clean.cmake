@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/main.dir/src/a.c.o"
-  "CMakeFiles/main.dir/src/a.c.o.d"
+  "CMakeFiles/main.dir/src/game.c.o"
+  "CMakeFiles/main.dir/src/game.c.o.d"
   "CMakeFiles/main.dir/src/main.c.o"
   "CMakeFiles/main.dir/src/main.c.o.d"
   "libmain.dll.a"

@@ -3,7 +3,7 @@
         {
             "name": "Win32",
             "includePath": [
-                "D:\\software\\msys2\\mingw64\\include",
+                "D:\\software\\msys2\\ucrt64\\include",
                 "${workspaceFolder}/include/**"
             ],
             "defines": [

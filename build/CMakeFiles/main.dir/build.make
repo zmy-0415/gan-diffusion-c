@@ -86,31 +86,33 @@ CMakeFiles/main.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/main.c.s"
 	/ucrt64/bin/cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /e/visualStudio/workspace/gan-diffusion-c/src/main.c -o CMakeFiles/main.dir/src/main.c.s
 
-CMakeFiles/main.dir/src/a.c.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/a.c.o: /e/visualStudio/workspace/gan-diffusion-c/src/a.c
-CMakeFiles/main.dir/src/a.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/e/visualStudio/workspace/gan-diffusion-c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/main.dir/src/a.c.o"
-	/ucrt64/bin/cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/a.c.o -MF CMakeFiles/main.dir/src/a.c.o.d -o CMakeFiles/main.dir/src/a.c.o -c /e/visualStudio/workspace/gan-diffusion-c/src/a.c
+CMakeFiles/main.dir/src/game.c.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/game.c.o: /e/visualStudio/workspace/gan-diffusion-c/src/game.c
+CMakeFiles/main.dir/src/game.c.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/e/visualStudio/workspace/gan-diffusion-c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/main.dir/src/game.c.o"
+	/ucrt64/bin/cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/game.c.o -MF CMakeFiles/main.dir/src/game.c.o.d -o CMakeFiles/main.dir/src/game.c.o -c /e/visualStudio/workspace/gan-diffusion-c/src/game.c
 
-CMakeFiles/main.dir/src/a.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/src/a.c.i"
-	/ucrt64/bin/cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /e/visualStudio/workspace/gan-diffusion-c/src/a.c > CMakeFiles/main.dir/src/a.c.i
+CMakeFiles/main.dir/src/game.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/src/game.c.i"
+	/ucrt64/bin/cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /e/visualStudio/workspace/gan-diffusion-c/src/game.c > CMakeFiles/main.dir/src/game.c.i
 
-CMakeFiles/main.dir/src/a.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/a.c.s"
-	/ucrt64/bin/cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /e/visualStudio/workspace/gan-diffusion-c/src/a.c -o CMakeFiles/main.dir/src/a.c.s
+CMakeFiles/main.dir/src/game.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/game.c.s"
+	/ucrt64/bin/cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /e/visualStudio/workspace/gan-diffusion-c/src/game.c -o CMakeFiles/main.dir/src/game.c.s
 
 # Object files for target main
 main_OBJECTS = \
 "CMakeFiles/main.dir/src/main.c.o" \
-"CMakeFiles/main.dir/src/a.c.o"
+"CMakeFiles/main.dir/src/game.c.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
 main.exe: CMakeFiles/main.dir/src/main.c.o
-main.exe: CMakeFiles/main.dir/src/a.c.o
+main.exe: CMakeFiles/main.dir/src/game.c.o
 main.exe: CMakeFiles/main.dir/build.make
+main.exe: /ucrt64/lib/libSDL2main.a
+main.exe: /ucrt64/lib/libSDL2.dll.a
 main.exe: CMakeFiles/main.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/e/visualStudio/workspace/gan-diffusion-c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable main.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)

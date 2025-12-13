@@ -1,1 +1,1 @@
-/ucrt64/bin/cc.exe  -O3 -march=native -lm -Wl,--enable-auto-import CMakeFiles/main.dir/src/main.c.o CMakeFiles/main.dir/src/a.c.o -o main.exe -Wl,--out-implib,libmain.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lm -lm
+/ucrt64/bin/cc.exe  -O3 -march=native -lm -Wl,--enable-auto-import CMakeFiles/main.dir/src/main.c.o CMakeFiles/main.dir/src/game.c.o -o main.exe -Wl,--out-implib,libmain.dll.a -Wl,--major-image-version,0,--minor-image-version,0  /ucrt64/lib/libSDL2main.a /ucrt64/lib/libSDL2.dll.a -lm -lshell32 -Wl,--undefined=WinMain

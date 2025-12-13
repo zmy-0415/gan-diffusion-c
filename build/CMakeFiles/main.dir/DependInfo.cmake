@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/e/visualStudio/workspace/gan-diffusion-c/src/a.c" "CMakeFiles/main.dir/src/a.c.o" "gcc" "CMakeFiles/main.dir/src/a.c.o.d"
+  "/e/visualStudio/workspace/gan-diffusion-c/src/game.c" "CMakeFiles/main.dir/src/game.c.o" "gcc" "CMakeFiles/main.dir/src/game.c.o.d"
   "/e/visualStudio/workspace/gan-diffusion-c/src/main.c" "CMakeFiles/main.dir/src/main.c.o" "gcc" "CMakeFiles/main.dir/src/main.c.o.d"
   )
 

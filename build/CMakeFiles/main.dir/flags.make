@@ -4,7 +4,7 @@
 # compile C with /ucrt64/bin/cc.exe
 C_DEFINES = 
 
-C_INCLUDES = -I/e/visualStudio/workspace/gan-diffusion-c/include
+C_INCLUDES = -I/e/visualStudio/workspace/gan-diffusion-c/include -isystem /ucrt64/include -isystem /ucrt64/include/SDL2
 
 C_FLAGS =  -O3 -march=native -lm -std=gnu11
 
