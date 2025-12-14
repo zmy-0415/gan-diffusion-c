@@ -126,6 +126,9 @@ int main(int argc, char* argv[]) {
     commons->WIN_WIDTH = WINDOW_WIDTH;
     commons->WIN_HEIGHT = WINDOW_HEIGHT;
     commons->imageManager = ImageManager_GetInstance(g_renderer);
+    // 初始化 AnimationManager
+    commons->g_anim_manager = AnimationManager_Create(commons->imageManager, g_renderer);
+
 
     init();
 
@@ -144,6 +147,10 @@ int main(int argc, char* argv[]) {
         last_ticks = current_ticks;
 
         update(dt_float);
+         // 清空整个渲染器（删除上一帧所有绘制内容）
+        if (SDL_RenderClear(g_renderer) != 0) {
+            fprintf(stderr, "SDL_RenderClear failed: %s\n", SDL_GetError());
+        }
 
         draw(); // 自定义绘制（也可直接用g_renderer）
 

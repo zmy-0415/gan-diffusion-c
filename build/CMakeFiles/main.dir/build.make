@@ -128,12 +128,27 @@ CMakeFiles/main.dir/src/ImageManager.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/ImageManager.c.s"
 	/ucrt64/bin/cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /e/visualStudio/workspace/gan-diffusion-c/src/ImageManager.c -o CMakeFiles/main.dir/src/ImageManager.c.s
 
+CMakeFiles/main.dir/src/AnimationManager.c.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/AnimationManager.c.o: /e/visualStudio/workspace/gan-diffusion-c/src/AnimationManager.c
+CMakeFiles/main.dir/src/AnimationManager.c.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/e/visualStudio/workspace/gan-diffusion-c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/main.dir/src/AnimationManager.c.o"
+	/ucrt64/bin/cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/AnimationManager.c.o -MF CMakeFiles/main.dir/src/AnimationManager.c.o.d -o CMakeFiles/main.dir/src/AnimationManager.c.o -c /e/visualStudio/workspace/gan-diffusion-c/src/AnimationManager.c
+
+CMakeFiles/main.dir/src/AnimationManager.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/src/AnimationManager.c.i"
+	/ucrt64/bin/cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /e/visualStudio/workspace/gan-diffusion-c/src/AnimationManager.c > CMakeFiles/main.dir/src/AnimationManager.c.i
+
+CMakeFiles/main.dir/src/AnimationManager.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/AnimationManager.c.s"
+	/ucrt64/bin/cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /e/visualStudio/workspace/gan-diffusion-c/src/AnimationManager.c -o CMakeFiles/main.dir/src/AnimationManager.c.s
+
 # Object files for target main
 main_OBJECTS = \
 "CMakeFiles/main.dir/src/main.c.o" \
 "CMakeFiles/main.dir/src/game.c.o" \
 "CMakeFiles/main.dir/src/common.c.o" \
-"CMakeFiles/main.dir/src/ImageManager.c.o"
+"CMakeFiles/main.dir/src/ImageManager.c.o" \
+"CMakeFiles/main.dir/src/AnimationManager.c.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
@@ -142,12 +157,13 @@ main.exe: CMakeFiles/main.dir/src/main.c.o
 main.exe: CMakeFiles/main.dir/src/game.c.o
 main.exe: CMakeFiles/main.dir/src/common.c.o
 main.exe: CMakeFiles/main.dir/src/ImageManager.c.o
+main.exe: CMakeFiles/main.dir/src/AnimationManager.c.o
 main.exe: CMakeFiles/main.dir/build.make
 main.exe: /ucrt64/lib/libSDL2main.a
 main.exe: /ucrt64/lib/libSDL2.dll.a
 main.exe: /ucrt64/lib/libSDL2_image.dll.a
 main.exe: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/e/visualStudio/workspace/gan-diffusion-c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable main.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/e/visualStudio/workspace/gan-diffusion-c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable main.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "📂 同步 Assets 目录：/e/visualStudio/workspace/gan-diffusion-c/assets → /e/visualStudio/workspace/gan-diffusion-c/build/assets"
 	/usr/bin/cmake.exe -E copy_directory /e/visualStudio/workspace/gan-diffusion-c/assets /e/visualStudio/workspace/gan-diffusion-c/build/assets

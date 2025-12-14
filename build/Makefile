@@ -142,6 +142,30 @@ sync_assets/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sync_assets.dir/build.make CMakeFiles/sync_assets.dir/build
 .PHONY : sync_assets/fast
 
+src/AnimationManager.o: src/AnimationManager.c.o
+.PHONY : src/AnimationManager.o
+
+# target to build an object file
+src/AnimationManager.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/AnimationManager.c.o
+.PHONY : src/AnimationManager.c.o
+
+src/AnimationManager.i: src/AnimationManager.c.i
+.PHONY : src/AnimationManager.i
+
+# target to preprocess a source file
+src/AnimationManager.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/AnimationManager.c.i
+.PHONY : src/AnimationManager.c.i
+
+src/AnimationManager.s: src/AnimationManager.c.s
+.PHONY : src/AnimationManager.s
+
+# target to generate assembly for a file
+src/AnimationManager.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/AnimationManager.c.s
+.PHONY : src/AnimationManager.c.s
+
 src/ImageManager.o: src/ImageManager.c.o
 .PHONY : src/ImageManager.o
 
@@ -248,6 +272,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... sync_assets"
 	@echo "... main"
+	@echo "... src/AnimationManager.o"
+	@echo "... src/AnimationManager.i"
+	@echo "... src/AnimationManager.s"
 	@echo "... src/ImageManager.o"
 	@echo "... src/ImageManager.i"
 	@echo "... src/ImageManager.s"

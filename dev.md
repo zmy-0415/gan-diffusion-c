@@ -12,3 +12,11 @@ make sync_assets
 
 # 5. 运行程序（可访问 build/assets 目录）
 ./main.exe
+
+
+
+
+
+
+
+

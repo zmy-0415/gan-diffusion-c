@@ -1,7 +1,9 @@
 #ifndef COMMON_H
 #define COMMON_H
 #include<SDL2/SDL.h>
+#include "AnimationManager.h"
 #include "ImageManager.h"
+
 
 
 typedef struct {
@@ -10,6 +12,7 @@ typedef struct {
     int WIN_WIDTH;
     int WIN_HEIGHT;
     ImageManager* imageManager;
+    AnimationManager* g_anim_manager;
 }CommonS;
 
 extern CommonS *commons;

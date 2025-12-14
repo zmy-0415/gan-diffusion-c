@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/main.dir/src/AnimationManager.c.o"
+  "CMakeFiles/main.dir/src/AnimationManager.c.o.d"
   "CMakeFiles/main.dir/src/ImageManager.c.o"
   "CMakeFiles/main.dir/src/ImageManager.c.o.d"
   "CMakeFiles/main.dir/src/common.c.o"

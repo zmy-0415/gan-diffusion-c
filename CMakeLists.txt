@@ -53,6 +53,7 @@ set(SOURCES
     src/game.c
     src/common.c
     src/ImageManager.c
+    src/AnimationManager.c
 )
 
 add_executable(main src/main.c ${SOURCES})

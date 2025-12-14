@@ -210,6 +210,8 @@ CMakeFiles/main.dir/src/game.c.o: \
  D:/software/msys2/ucrt64/include/SDL2/SDL_version.h \
  D:/software/msys2/ucrt64/include/SDL2/SDL_locale.h \
  D:/software/msys2/ucrt64/include/SDL2/SDL_misc.h \
- E:/visualStudio/workspace/gan-diffusion-c/include/ImageManager.h \
+ E:/visualStudio/workspace/gan-diffusion-c/include/AnimationManager.h \
  D:/software/msys2/ucrt64/include/SDL2/SDL_image.h \
- D:/software/msys2/ucrt64/include/SDL2/SDL.h
+ D:/software/msys2/ucrt64/include/SDL2/SDL.h \
+ D:/software/msys2/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdbool.h \
+ E:/visualStudio/workspace/gan-diffusion-c/include/ImageManager.h

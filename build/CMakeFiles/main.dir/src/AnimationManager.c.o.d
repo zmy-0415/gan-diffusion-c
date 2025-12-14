@@ -1,6 +1,6 @@
-CMakeFiles/main.dir/src/common.c.o: \
- E:/visualStudio/workspace/gan-diffusion-c/src/common.c \
- E:/visualStudio/workspace/gan-diffusion-c/include/common.h \
+CMakeFiles/main.dir/src/AnimationManager.c.o: \
+ E:/visualStudio/workspace/gan-diffusion-c/src/AnimationManager.c \
+ E:/visualStudio/workspace/gan-diffusion-c/include/AnimationManager.h \
  D:/software/msys2/ucrt64/include/SDL2/SDL.h \
  D:/software/msys2/ucrt64/include/SDL2/SDL_main.h \
  D:/software/msys2/ucrt64/include/SDL2/SDL_stdinc.h \
@@ -209,7 +209,6 @@ CMakeFiles/main.dir/src/common.c.o: \
  D:/software/msys2/ucrt64/include/SDL2/SDL_version.h \
  D:/software/msys2/ucrt64/include/SDL2/SDL_locale.h \
  D:/software/msys2/ucrt64/include/SDL2/SDL_misc.h \
- E:/visualStudio/workspace/gan-diffusion-c/include/AnimationManager.h \
  D:/software/msys2/ucrt64/include/SDL2/SDL_image.h \
  D:/software/msys2/ucrt64/include/SDL2/SDL.h \
  D:/software/msys2/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdbool.h \

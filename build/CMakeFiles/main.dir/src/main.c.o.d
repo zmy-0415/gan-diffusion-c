@@ -211,9 +211,10 @@ CMakeFiles/main.dir/src/main.c.o: \
  D:/software/msys2/ucrt64/include/SDL2/SDL_version.h \
  D:/software/msys2/ucrt64/include/SDL2/SDL_locale.h \
  D:/software/msys2/ucrt64/include/SDL2/SDL_misc.h \
- E:/visualStudio/workspace/gan-diffusion-c/include/ImageManager.h \
+ E:/visualStudio/workspace/gan-diffusion-c/include/AnimationManager.h \
  D:/software/msys2/ucrt64/include/SDL2/SDL_image.h \
  D:/software/msys2/ucrt64/include/SDL2/SDL.h \
+ E:/visualStudio/workspace/gan-diffusion-c/include/ImageManager.h \
  D:/software/msys2/ucrt64/include/windows.h \
  D:/software/msys2/ucrt64/include/sdkddkver.h \
  D:/software/msys2/ucrt64/include/excpt.h \
