@@ -1,3 +1,4 @@
 /e/visualStudio/workspace/gan-diffusion-c/build/CMakeFiles/main.dir
+/e/visualStudio/workspace/gan-diffusion-c/build/CMakeFiles/sync_assets.dir
 /e/visualStudio/workspace/gan-diffusion-c/build/CMakeFiles/edit_cache.dir
 /e/visualStudio/workspace/gan-diffusion-c/build/CMakeFiles/rebuild_cache.dir

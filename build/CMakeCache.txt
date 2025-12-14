@@ -28,7 +28,7 @@ CMAKE_BUILD_TYPE:STRING=
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
 //C compiler
-CMAKE_C_COMPILER:STRING=/ucrt64/bin/cc.exe
+CMAKE_C_COMPILER:FILEPATH=/ucrt64/bin/cc.exe
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -213,17 +213,14 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Disable WebP support
+SDL2IMAGE_BUILD_WEBP:BOOL=OFF
+
+//Disable WebP usage
+SDL2IMAGE_USE_WEBP:BOOL=OFF
+
 //The directory containing a CMake configuration file for SDL2.
 SDL2_DIR:PATH=/ucrt64/lib/cmake/SDL2
-
-//Value Computed by CMake
-gan_diffusion_c_BINARY_DIR:STATIC=/e/visualStudio/workspace/gan-diffusion-c/build
-
-//Value Computed by CMake
-gan_diffusion_c_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-gan_diffusion_c_SOURCE_DIR:STATIC=/e/visualStudio/workspace/gan-diffusion-c
 
 //Value Computed by CMake
 main_BINARY_DIR:STATIC=/e/visualStudio/workspace/gan-diffusion-c/build
@@ -233,6 +230,9 @@ main_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 main_SOURCE_DIR:STATIC=/e/visualStudio/workspace/gan-diffusion-c
+
+//Fake WebP found to skip check
+webp_FOUND:BOOL=ON
 
 
 ########################

@@ -1,1 +1,0 @@
-/ucrt64/bin/cc.exe  -O3 -march=native -lm -Wl,--enable-auto-import CMakeFiles/gan_train.dir/src/main.c.o CMakeFiles/gan_train.dir/src/linalg.c.o CMakeFiles/gan_train.dir/src/nn.c.o CMakeFiles/gan_train.dir/src/gan.c.o -o gan_train.exe -Wl,--out-implib,libgan_train.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lm -lm

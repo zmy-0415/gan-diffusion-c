@@ -129,6 +129,67 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+#=============================================================================
+# Target rules for targets named sync_assets
+
+# Build rule for target.
+sync_assets: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sync_assets
+.PHONY : sync_assets
+
+# fast build rule for target.
+sync_assets/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sync_assets.dir/build.make CMakeFiles/sync_assets.dir/build
+.PHONY : sync_assets/fast
+
+src/ImageManager.o: src/ImageManager.c.o
+.PHONY : src/ImageManager.o
+
+# target to build an object file
+src/ImageManager.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/ImageManager.c.o
+.PHONY : src/ImageManager.c.o
+
+src/ImageManager.i: src/ImageManager.c.i
+.PHONY : src/ImageManager.i
+
+# target to preprocess a source file
+src/ImageManager.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/ImageManager.c.i
+.PHONY : src/ImageManager.c.i
+
+src/ImageManager.s: src/ImageManager.c.s
+.PHONY : src/ImageManager.s
+
+# target to generate assembly for a file
+src/ImageManager.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/ImageManager.c.s
+.PHONY : src/ImageManager.c.s
+
+src/common.o: src/common.c.o
+.PHONY : src/common.o
+
+# target to build an object file
+src/common.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/common.c.o
+.PHONY : src/common.c.o
+
+src/common.i: src/common.c.i
+.PHONY : src/common.i
+
+# target to preprocess a source file
+src/common.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/common.c.i
+.PHONY : src/common.c.i
+
+src/common.s: src/common.c.s
+.PHONY : src/common.s
+
+# target to generate assembly for a file
+src/common.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/common.c.s
+.PHONY : src/common.c.s
+
 src/game.o: src/game.c.o
 .PHONY : src/game.o
 
@@ -185,7 +246,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... sync_assets"
 	@echo "... main"
+	@echo "... src/ImageManager.o"
+	@echo "... src/ImageManager.i"
+	@echo "... src/ImageManager.s"
+	@echo "... src/common.o"
+	@echo "... src/common.i"
+	@echo "... src/common.s"
 	@echo "... src/game.o"
 	@echo "... src/game.i"
 	@echo "... src/game.s"
